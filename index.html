@@ -1,0 +1,718 @@
+<html>
+				<title></title>
+				<head>
+								<meta name="viewport" content="width=device-width, initial-scale=1.0">
+								<link rel="stylesheet" href="webstyle.css">
+								<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+					<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Nunito:ital,wght@1,300&family=Pangolin&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@300&family=Lily+Script+One&family=Nunito:ital,wght@1,300&family=Pangolin&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--<script src="app.js"></script>-->
+				
+								
+								
+								
+				</head>
+				<body id="bdy">
+				    
+				    <div class="options" id="banner">
+													<div class="bmdinner">
+																	<p class="Block" id="blockuser">Thank you for visiting my website<br>Please click on the + icon to share your thoughts</p>
+													</div>
+													<hr class="slim">
+											<center><button class="ok" id="OK" onclick="togglebgmusic()">OK</button></center>
+													
+									</div>
+								
+						<audio controls autoplay id="audioplayer">
+ <source src="alpha.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+								
+								
+								
+		<div class="tab-body"> 
+					<div class="tabcontent divactive hm" id="home">
+					    			    
+					   <div class="chatbox">
+           <div class="userbar">
+               <nav class="topnav">
+												     theunbelievables
+								      </nav>
+           </div>
+              <div class="container" id="cont">              
+              </div>		
+              		    
+					        <footer class="fut">
+  <!-- <nav class="navbar header" id="header">
+<a href="#" class="navlink"><i class="fa fa-envelope-open-o active btn" style="font-size:30px;" onclick="openTab(event, 'home')"></a></i>
+
+<a href="#" class="navlink"><i class="fa fa-plus-circle btn" style="font-size:30px;" onclick="openTab(event, 'rome')"></a></i>
+
+<a href="#" class="navlink"><i class="fa fa-user-circle-o btn" style="font-size:30px;" onclick="openTab(event, 'prom')"></a></i>
+   </nav>-->
+             </footer>
+        </div>
+								
+									
+	</div>
+												
+					<div class="tabcontent divactive snd" id="send">
+		
+</div>
+
+<!--<div class="tabcontent divactive rm" id="rome">
+				<div class="postdiv">
+								<div class="wrapperdiv">	
+												<form class="pstform">
+				<input type="text" class="textf" id="name" placeholder="Enter your name here" required>
+				<textarea class="write" id="write" placeholder="Write something here" required></textarea>
+				<input type="button" class="postbtn" value="Post" id="pst">
+				</form>
+				</div>
+</div>
+				
+</div>   -->      <!--end original-->
+
+<div class="tabcontent divactive dm" id="dome">
+				
+</div>
+
+<div class="tabcontent divactive abtsec pm" id="prom">
+   <div class="baksa">
+				<div class="imgdiv">
+								<img class="me" src="1634980325678.png">
+				</div>
+				<p class="abt"><bold>Aman Khan</bold></p>
+				<br>
+				<p class="digitalcrt">Digital Creator</p>
+				<br>
+				<div class="aboutbox">
+				</div>
+				<div class="imdev">
+				    <p class="typ">Hi, i am Aman, and i am a software developer. I have a genuine passion for all things tech, and I am constantly diving into the exciting world of software development. It is like solving puzzles, and I absolutely love it. I'm the kind of person who never stops learning, always staying up-to-date with the latest programming languages, frameworks, and trends.
+				    <br><br>
+				    When it comes to coding, I am all about turning complex problems into elegant solutions. I find that there's something incredibly satisfying about writing lines of code that bring ideas to life. Quality is essential to me, and I strive to create software that not only works flawlessly but also provides seamless experiences for users.</p>
+				</div>
+		</div>
+								
+				
+</div>
+  
+<!--  <nav class="navi header" id="header feather">
+<a href="#" class="navlink"><i class="fa fa-envelope-open-o active btn" style="font-size:30px;" onclick="sett()"></a></i>
+
+<a href="#" class="navlink"><i class="fa fa-plus-circle btn" style="font-size:30px;" onclick="openTab(event, 'rome')"></a></i>
+
+<a href="#" class="navlink"><i class="fa fa-user-circle-o btn" style="font-size:30px;" onclick="openTab(event, 'prom')"></a></i>
+  </nav>-->
+  
+</div> 
+								
+				<!--		<nav class="topnav">
+												theunbelievables
+								</nav>-->
+						
+	<div class="modal" id="modl">
+	  <div class="wr">Write what you feel about me</div>
+	   <div class="fdiv">
+   <form id="myForm">
+	    <label class="lab"><strong>NAME</strong></label>&nbsp;<br>
+	    <input type="text" class="nm" id="nam" placeholder="Write Your Name" oninput="checke()" name="name" required pattern="\S(.*\S)?" title="Please dont use empty space in your Name"/>
+	    <br>
+	    <label class="lab"><strong>Write Something About Me</strong></label>&nbsp;<br>
+	    <textarea type="text" class="ta" id="tx" placeholder="Write Something..." oninput="checke()" name="message" required pattern="\S(.*\S)?"></textarea>
+	    </div>
+	    &nbsp;
+	    <div class="botdiv">
+								<button type="button" class="cancelbtn" id="cancel" onclick="Close()">Cancel</button>
+								<button type="submit" class="savebtn" id="psave" onsubmit="hidemodal()">Save</button>
+				</div>
+			</form>
+	    
+	</div>
+								
+												
+								
+								
+								<nav class="navbar header" id="header">
+<a href="#" class="navlink"><i class="fa fa-envelope-open-o active btn" style="font-size:30px;" onclick="openTab(event, 'home')"></a></i>
+
+
+<a href="#" class="navlink"><i class="fa fa-plus-circle btn" style="font-size:30px;" onclick="OpenModal()"></a></i>
+
+
+
+<a href="#" class="navlink"><i class="fa fa-user-circle-o btn" style="font-size:30px;" onclick="openTab(event, 'prom')"></a></i></nav>
+
+
+
+<!--<a href="#" class="navlink"><img class="heart" src="r/bdl.png"></a>
+<a href="#" class="navlink"><img src="adobe_air.png"></a>
+			<a href="#" class="navlink"><img src="portfolio.png"></a>
+			<a href="#" class="navlink"><img src="portfolio.png"></a>
+			<a href="#" class="navlink"><img src="portfolio.png"></a>-->
+			
+	
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+  import { getDatabase, set, ref, child, push, onValue, get} from "https://www.gstatic.com/firebasejs/9.5.0/firebase-database.js";
+import { getFirestore, doc, setDoc, getDoc, collection, getDocs, onSnapshot, deleteDoc, query, orderBy, serverTimestamp} from "https://www.gstatic.com/firebasejs/9.5.0/firebase-firestore.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAVWWMkLRAC79kvrx5PpvdkMtgMKmbc1hs",
+    authDomain: "store-4a0c9.firebaseapp.com",
+    projectId: "store-4a0c9",
+    storageBucket: "store-4a0c9.appspot.com",
+    messagingSenderId: "679682903095",
+    appId: "1:679682903095:web:6c0a555b55dd660e5683b2"
+  };
+
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+
+  const querySnapshot = getDocs(collection(db, "Users"));
+  
+const unsub = onSnapshot(collection(db, "Users"));
+
+
+const $form = document.querySelector("#myForm");
+
+window.onload = () => {
+  $form.querySelector("input").focus();
+};
+
+$form.onsubmit = function(e){
+    
+e.preventDefault();
+document.getElementById("nam").value="";
+document.getElementById("tx").value="";
+}
+
+
+
+  /*document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevents the default form action
+      document.getElementById("modl").classList.toggle("opaque");
+
+document.getElementById("nam").value="";
+document.getElementById("tx").value="";
+
+    
+})*/
+
+/*document.getElementById('cancel').addEventListener('click', function cancel(){
+
+document.getElementById("modl").classList.toggle("opaque");
+    
+})*/
+
+/*document.getElementById("psave").addEventListener("click", function pikner()
+    {
+        var tf = document.getElementById("tx").value.trim();
+    var bt = document.getElementById("psave");
+    
+    if(tf === "")
+    {
+        bt.style.background="red";
+        alert("please enter something!");
+       bt.disabled=true;
+    }
+    
+    })*/
+  
+   document.getElementById("psave").addEventListener("click", function posted(){
+ 
+ 
+
+ const date = new Date();
+ var day = date.getDate();
+ var month = date.toLocaleString("default", { month: 'short'});
+ var year = date.getFullYear();
+ 
+ var h = date.getHours();
+ var m = date.getMinutes();
+ 
+  var key = Math.random();
+  var verified = "Yes";
+  var unverified = "No";
+ let uname = document.getElementById("nam").value;
+const post = document.getElementById("tx").value;
+
+
+var tf = document.getElementById("tx").value.trim();
+var nf = document.getElementById("nam").value.trim();
+var bt = document.getElementById("psave");
+const stop = new Audio("stop.mp3");
+const sent = new Audio("success.mp3");
+    
+    if(tf === "")
+    {
+        //bt.style.background="red";
+        stop.play();
+        alert("Please Enter Something!");
+       //bt.disabled=true;
+       
+    }
+   else if(nf === "")
+    {
+        //bt.style.background="red";
+        stop.play();
+        alert("Please Enter Your Name!");
+       //bt.disabled=true;
+    }
+    
+
+else if (document.getElementById("nam").value=="&#1040;man" || (document.getElementById("nam").value=="theunbelievable&#1109;")) {
+setDoc(doc(db, 'Users',uname+key),{
+  				Written_By: uname,
+  				Wrote: post,
+					Time: day+" "+month+" "+year+" "+h+":"+m,
+  				Verified: verified,
+  				createdAt: serverTimestamp(),
+
+  });
+  sent.play();
+  bt.disabled=true;
+document.getElementById("modl").classList.toggle("opaque");
+alert("Thank you");
+				
+}
+else {
+setDoc(doc(db, 'Users',uname+key),{
+  				Written_By: uname,
+  				Wrote: post,
+					Time: day+" "+month+" "+year+" "+h+":"+m,
+					Verified: unverified,
+					createdAt: serverTimestamp(),
+
+
+					});
+					sent.play();
+					bt.disabled=true;
+document.getElementById("modl").classList.toggle("opaque");
+alert("Thank You");
+					
+					
+				}
+})
+
+
+
+
+
+
+function relod(){
+				location.reload();
+}
+
+async function showM(){
+
+const options = {
+  serverTimestamps: 'estimate', // Prevent automatic ordering on the server
+};
+
+
+const dataRef = collection(db, 'Users');
+
+const Query = query(dataRef, orderBy('createdAt'));
+
+onSnapshot(Query, (snap) =>{
+snap.docChanges().forEach(change => {
+
+let dv = document.createElement('div');
+dv.setAttribute("class", "htt");
+
+									
+									/*test*/
+									if (change.type === 'added') {
+									
+							if (change.doc.data().Verified=="Yes") {
+							dv.innerHTML+=`
+												<div class="card">
+												<!--<img class="verified" src="https://img.icons8.com/ios-glyphs/30/000000/approval.png"/>-->
+												<article>${change.doc.data().Written_By}             &nbsp<img class="verified" src="https://img.icons8.com/color/48/000000/verified-badge.png"/></article>
+									<!--<hr class="line">-->
+									<p class="wrote">${change.doc.data().Wrote}</p>
+									<br>
+									<br>
+									<p class="time">${change.doc.data().Time}</p>
+									</div>
+									`
+									document.getElementById("cont").appendChild(dv);
+				
+}
+
+
+else {
+let unv = document.createElement('div');
+unv.setAttribute("class", "htt");
+unv.innerHTML+=`
+												<div class="card">
+												<!--<img class="verified" src="https://img.icons8.com/ios-glyphs/30/000000/approval.png"/>-->
+												<article>${change.doc.data().Written_By}    </article>
+									<!--<hr class="line">-->
+									<p class="wrote">${change.doc.data().Wrote}</p>
+									<br>
+									<br>
+									<p class="time">${change.doc.data().Time}</p>
+									</div>
+									`
+									document.getElementById("cont").appendChild(unv);
+				
+}
+}
+/*test*/
+
+/*let template = ``;
+querySnapshot.then((snap)=> {
+snap.docs.forEach(doc => {
+renderS(doc);
+})
+})*/
+
+})
+})
+}
+
+showM();
+
+
+</script>
+  
+  
+  
+  
+  
+
+
+ 
+
+  
+												
+											
+								
+								
+								
+								
+				
+				
+				<script>
+const tap = new Audio("zap1.mp3");
+const canc = new Audio("zap3.mp3");
+
+const audioPlayer = document.getElementById('audioplayer');
+const banner = document.getElementById("banner");
+
+function openTab(evt, tabName) {
+var i, tabcontent, btns;
+tabcontent = document.getElementsByClassName("tabcontent");
+for(i=0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display="none";
+}
+btns = document.getElementsByClassName("btn");
+for(i =0; i < btns.length; i++) {
+				btns[i].className = btns[i].className.replace(" active", "");
+}
+tap.play(); document.getElementById(tabName).style.display="block";
+//document.getElementById(tabName).style.display="block";
+ evt.currentTarget.classList.toggle("active");
+}
+
+  
+function sett()
+{
+ openTab(event, 'home');         
+ document.getElementById("feather").style.display="none";
+}
+
+function OpenModal()
+{
+tap.play(); document.getElementById("modl").classList.toggle("opaque");  
+document.getElementById("nam").focus();
+}
+
+function Close()
+{
+canc.play(); document.getElementById("modl").classList.toggle("opaque");
+document.getElementById("nam").value="";
+document.getElementById("tx").value="";
+}
+
+
+function hidemodal()
+{
+/*document.getElementById("nam").value="";
+document.getElementById("tx").value=""; document.getElementById("myForm").classList.toggle("opaque");*/
+}
+
+
+var nf = document.getElementById("nam").value.trim();
+    var tf = document.getElementById("tx").value.trim();
+    var bt = document.getElementById("psave");
+
+function checknf(field){
+	if (field == "" ||
+	 field == null ||
+		field == "undefinied"){
+
+		return false;
+	}
+	else if(/^\s*$/.test(field)){
+		return false;
+	}
+	else{
+		return true;
+	}
+}
+
+
+
+function checktf(field){
+	if (field == "" ||
+	 field == null ||
+		field == "undefinied"){
+
+		return false;
+	}
+	else if(/^\s*$/.test(field)){
+		return false;
+	}
+	else{
+		return true;
+	}
+}
+
+
+
+	
+
+
+/*var nf = document.getElementById("nam").value.trim();
+    var tf = document.getElementById("tx").value.trim();
+    var bt = document.getElementById("psave");
+    
+
+if (nf === '' && tf === '') {
+        alert('Both input fields are missing.');
+                bt.disabled = true;
+                bt.style.background = "red";
+            } else if (nf === '') {
+                alert('Field 1 is missing.');
+                bt.disabled = true;
+                bt.style.background = "red";
+            } else if (tf === '') {
+                alert('Field 2 is missing.');
+               bt.disabled = true;
+               bt.style.background = "red";
+            } else {
+                // Enable the button if both fields have values
+                bt.disabled = false;
+                bt.style.background = "pink";
+            }*/
+
+
+
+function checke() 
+{
+    var nf = document.getElementById("nam").value.trim();
+    var tf = document.getElementById("tx").value.trim();
+    var bt = document.getElementById("psave");
+    
+    
+   /* if(nf == "" && tf != "")
+    {
+        bt.style.background="red";
+        alert("please enter your name!");
+        bt.disabled=true;
+    }
+    else if(nf != "" && tf == "")
+    {
+        bt.style.background="red";
+        alert("please enter something in the field");
+        bt.disabled=true;
+    }
+    else if(nf == "" && tf == "")
+    {
+        bt.style.background="red";
+        alert("please enter something")
+        bt.disabled=true;
+    }
+    else
+    {
+        bt.style.background="pink";
+        bt.disabled=false;
+    }*/
+    
+   /* if(nf == "")
+    {
+        bt.style.background="red";
+        //alert("please enter your name!");
+        bt.disabled=true;
+    }
+    else if(tf == "")
+    {
+        bt.style.background="red";
+        //alert("please enter something!");
+        bt.disabled=true;
+    }
+    else
+    {
+        bt.style.background="pink";
+        bt.disabled=false;
+    }*/
+    
+  /*  if(tf === "")
+    {
+        bt.style.background="red";
+        //alert("please enter something!");
+       bt.disabled=true;
+    }
+    else
+    {
+        bt.style.background="pink";
+        bt.disabled=false;
+    }*/
+}
+
+function togglebgmusic()
+{
+    banner.classList.toggle("hidden");
+if (audioPlayer.paused) {
+        audioPlayer.play();
+        //playButton.textContent = 'Pause';
+      }
+      else
+      {
+          audioplayer.pause();
+      }
+}
+
+window.addEventListener("beforeunload", function() {
+      // Show a simple alert when the window is closed
+      alert("Goodbye! This alert may not be visible in all browsers.");
+          audioplayer.pause();
+    });
+
+     
+       
+   
+
+
+
+						</script>
+						
+					<!--<script>
+										area=document.getElementById("write");
+										document.getElementById("pst").addEventListener("click", function posted(){
+		  	act=document.getElementById("home");
+									<!--	function posted(){-->
+										<!--var gt = document.getElementById("write").value;
+									
+										var crt = document.createElement("div");
+									/*	crt.setAttribute("class", "htt");
+										crt.innerHTML=gt;
+										/*act.appendChild(crt)+"<br>";*/
+										
+										var obj = {"nissan":gt};
+
+localStorage.setItem('myStorage', JSON.stringify(obj));
+										
+										
+										
+								});
+								var obj = JSON.parse(localStorage.getItem('myStorage'));
+let w = obj.nissan;
+console.log(w);
+
+
+var crt = document.createElement("div");
+crt.setAttribute("class", "htt");
+crt.innerHTML=w;
+document.getElementById("home").appendChild(crt);
+theunbelievables&#1109;				
+&#1040;man	
+							
+								
+						
+						</script>-->
+						
+						<script>
+										$('#name').on('keypress keyup keydown', function () { 
+  if ($('#name').val() == "" ) { 
+    $('#pst').prop('disabled', true); 
+  } 
+  else {   
+    $('#pst').prop('disabled', false); 
+  } 
+});
+$('#name').on('keypress keyup keydown', function () { 
+  if ($('#name').val() == "" ) { 
+  				if ($('#write').val() == "" ) { 
+    $('#pst').prop('disabled', true); 
+  } 
+  else {   
+    $('#pst').prop('disabled', false); 
+  } 
+}
+});
+
+$('#write').on('keypress keyup keydown', function () { 
+  if ($('#write').val() == "" ) { 
+  				if ($('#name').val() == "" ) { 
+    $('#pst').prop('disabled', true); 
+  } 
+  else {   
+    $('#pst').prop('disabled', false); 
+  } 
+}
+});
+$('#write').on('keypress keyup keydown', function () { 
+  if ($('#write').val() == "" ) { 
+    $('#pst').prop('disabled', true); 
+  } 
+  else {   
+    $('#pst').prop('disabled', false); 
+  } 
+});
+
+
+
+
+
+if ($('#name').val() == "" ) { 
+    $('#pst').prop('disabled', true); 
+  } 
+  else {   
+    $('#pst').prop('disabled', false); 
+    }
+    
+    
+if ($('#write').val() == "" ) { 
+    $('#pst').prop('disabled', true); 
+  } 
+  else {   
+    $('#pst').prop('disabled', false); 
+    }
+    
+    
+    
+    
+
+						</script>
+</body>
+</html>
