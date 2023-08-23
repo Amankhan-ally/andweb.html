@@ -13,6 +13,9 @@ body{
 	   /*	background: url('Backgrounds/You are my ocean.gif');*/
 				background-size: cover;
 				background-repeat: no-repeat;
+	                        overflow-y: hidden;
+				overflow: hidden;
+				overflow-x: hidden;
 				
 }
 
