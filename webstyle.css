@@ -731,7 +731,7 @@ display: none;
   height: calc(100% - 80px);
   width: 100%;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
   background: transparent;
 
 }
