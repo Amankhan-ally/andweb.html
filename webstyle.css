@@ -14,8 +14,8 @@ body{
 				background-size: cover;
 				background-repeat: no-repeat;
 	                        overflow-y: hidden;
-				overflow: hidden;
-				overflow-x: hidden;
+				/*overflow: hidden;
+				overflow-x: hidden;*/
 				
 }
 
@@ -725,11 +725,11 @@ display: none;
 }
 .container
 {
-  height: calc(100% - 100px);
+  height: calc(100% - 80px);
   width: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  background: red;
+  background: transparent;
 
 }
 .text
