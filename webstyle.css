@@ -487,6 +487,7 @@ background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
 scroll-behavior: smooth;
+overflow: hidden;
 //animation: hueRotate 40s linear infinite;
 
 				
