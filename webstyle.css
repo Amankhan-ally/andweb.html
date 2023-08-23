@@ -729,7 +729,7 @@ display: none;
   width: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  background: transparent;
+  background: red;
 
 }
 .text
