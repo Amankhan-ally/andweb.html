@@ -91,12 +91,12 @@ html, body{
 				
 } 
 .tabcontent{
-				overflow-y: hidden;
+				/*overflow-y: hidden;*/
 				height: 100%;
 				width: 100%;
 				position: relative;
 				overflow: hidden;
-				overflow-x: hidden;
+				/*overflow-x: hidden;*/
 				/*backdrop-filter: blur(0px);*/
 				justify-content: center;
 				align-items: center;
