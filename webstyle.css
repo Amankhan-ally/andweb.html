@@ -775,6 +775,7 @@ display: none;
 				left: 50%;
 				padding: 15px;
 				padding-top: 5px;
+	                        padding-bottom: 0px;
 				/*background:linear-gradient(to right, rgba(255,255,255,0.2), rgba(255,255,255,0.2), rgba(255,255,255,0.2));*/
 				backdrop-filter: blur(20px);
 				visibility:hidden;
