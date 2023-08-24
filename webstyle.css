@@ -881,7 +881,7 @@ display: none;
 		width: 100%;
 		display: flex;
 		padding: 0px;
-		position: relative;
+		/*position: relative;*/
 		/*bottom: 5px;*/
 		padding-top: 2px;
 		bottom: 1.2px;
@@ -902,7 +902,7 @@ display: none;
 				user-select: none;
 				border: none;
 				position: absolute;
-	                        top: 1.7px;
+	                       /* top: 1.7px;*/
 				right: 8rem;
 				color: white;
 				border-radius: 5px;								
@@ -914,7 +914,7 @@ display: none;
 				background: lawngreen;
 				border: none;
 				position: absolute;
-	                        top: 1.7px;
+	                       /* top: 1.7px;*/
 				right: 2.3rem;
 				color: white;
 				border-radius: 5px;
