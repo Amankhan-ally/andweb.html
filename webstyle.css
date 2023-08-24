@@ -767,7 +767,7 @@ display: none;
 {
     /*position: relative;*/
     max-height: 17rem;
-				width: 20.5rem;
+				width: 22rem;
 				border-radius: 15px;
 				position: relative;
 				transform: translate(-50%,-50%);
@@ -782,6 +782,7 @@ display: none;
 				backdrop-filter: blur(20px);
 				visibility:hidden;
 				display:none;
+	                        box-sizing: border-box;
 				
 				color: rgba(0,0,0,0.8);
 				box-shadow: 10px 10px 15px 10px rgb(0 0 0 / 40%);
