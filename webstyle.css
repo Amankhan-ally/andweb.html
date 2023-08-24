@@ -746,7 +746,7 @@ display: none;
 .userbar
 {
   height: 30px;
-  background: transparent;
+  background: red;
   color: #fff;
   /*padding: 0 8px;*/
   font-size: 24px;
