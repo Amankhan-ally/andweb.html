@@ -776,6 +776,8 @@ display: none;
 				/*padding: 15px;*/
 	                        padding-left: 15px;
 	                        padding-right: 15px;
+                                padding-bottom: 5px;
+
 				/*padding-top: 5px;*/
 	                        /*padding-bottom: 0px;*/
 				/*background:linear-gradient(to right, rgba(255,255,255,0.2), rgba(255,255,255,0.2), rgba(255,255,255,0.2));*/
@@ -877,8 +879,8 @@ display: none;
 }
 .botdiv
 {
-		background: red;
-		height: 3rem;
+		background: transparent;
+		height: 2.5rem;
 		width: 100%;
 		display: flex;
 		padding: 0px;
@@ -886,7 +888,7 @@ display: none;
 		/*bottom: 5px;*/
 		/*padding-top: 2px;*/
 		bottom: 1px;
-                margin-top: 1px;
+               /* margin-top: 1px;*/
 
 		
 }
