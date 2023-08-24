@@ -681,6 +681,18 @@ document.getElementById("tx").value=""; document.getElementById("myForm").classL
 $('.btta').prop('disabled', true); 
 
 
+
+					const inputFields = document.querySelectorAll('.modal');
+
+// Add a focus event listener to each input field
+inputFields.forEach(input => {
+  input.addEventListener('focus', (event) => {
+    event.preventDefault(); // Prevent default scroll behavior
+    // You can also add any additional logic here, such as opening the modal if it's closed.
+  });
+});
+
+
 var nf = document.getElementById("nam").value.trim();
     var tf = document.getElementById("tx").value.trim();
     var bt = document.getElementById("psave");
