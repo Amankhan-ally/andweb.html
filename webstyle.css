@@ -766,7 +766,7 @@ display: none;
 .modal
 {
     /*position: relative;*/
-    height: 17.2rem;
+    height: 17rem;
 				width: 20.5rem;
 				border-radius: 15px;
 				position: relative;
@@ -885,7 +885,7 @@ display: none;
 		/*bottom: 5px;*/
 		/*padding-top: 2px;*/
 		bottom: 1px;
-                margin-top: 0rem;
+                margin-top: 1px;
 
 		
 }
