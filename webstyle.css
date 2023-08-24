@@ -869,6 +869,7 @@ display: none;
 .lab
 {
     font-weight: 600;
+    font-family: 'New Tegomin', serif;
 				color: black;
 				font-size: .875rem;
 				user-select: none;
@@ -891,7 +892,7 @@ display: none;
 .fdiv
 {
     background: white;
-    height: 74%;
+    height: 73.6%;
 }
 .cancelbtn
 {
