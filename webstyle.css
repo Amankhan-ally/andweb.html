@@ -766,7 +766,7 @@ display: none;
 .modal
 {
     /*position: relative;*/
-    height: 17.5rem;
+    height: 17.3rem;
 				width: 20.5rem;
 				border-radius: 15px;
 				position: relative;
@@ -873,7 +873,7 @@ display: none;
 }
 .botdiv
 {
-		background: red;
+		background: transparent;
 		height: 2.1rem;
 		width: 100%;
 		display: flex;
