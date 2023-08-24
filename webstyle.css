@@ -746,12 +746,21 @@ display: none;
 .userbar
 {
   height: 30px;
-  background: red;
+  background: transparent;
   color: #fff;
   /*padding: 0 8px;*/
   font-size: 24px;
   position: relative;
   z-index: 1;
+
+	font-family: 'Lily Script One', cursive;
+				font-size: 25px;
+				user-select: none;
+				color: dodgerblue;
+				display: flex;
+				justify-content: center;
+				box-shadow: 0 10px 15px rgb(0 0 0 / 30%);
+				backdrop-filter: blur(35px);
 }
 
 .modal
