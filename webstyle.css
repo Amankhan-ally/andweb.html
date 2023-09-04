@@ -854,6 +854,11 @@ display: none;
 		-webkit-touch-highlight: none;
 		box-sizing: border-box;
 }
+
+.nm::-ms-expand {
+  border: 0;
+  /*background-color: transparent;*/
+}
 .nm:hover:
 {
     border-width: 2px;
@@ -897,6 +902,10 @@ display: none;
 		overflow-x: auto;
 		overflow-y: auto;
 		box-sizing: border-box;
+}
+.ta::-ms-expand {
+  border: 0;
+  /*background-color: transparent;*/
 }
 .ta:hover
 {
