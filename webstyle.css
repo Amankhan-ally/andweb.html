@@ -431,6 +431,7 @@ filter: contrast(150%);
   //width: calc(100% - 50px);
  // background: green;
      filter: contrast(150%);
+     padding: 2px;
 }
 .wrote2{
 				margin-top: 4px;
@@ -982,7 +983,8 @@ display: none;
 			/*	padding-bottom: 5px;*/
 				color: white;
 				border-radius: 5px;
-				user-select: none;				
+				user-select: none;	
+	                        outline: none;
 }
 
 .cbtn
@@ -996,7 +998,8 @@ display: none;
 			 bottom: 5.2px;
 				right: 8rem;
 				color: transparent;
-				border-radius: 5px;								
+				border-radius: 5px;		
+	                        outline: none;
 }
 .sbtn
 {
@@ -1009,7 +1012,8 @@ display: none;
 				right: 2.3rem;
 				color: white;
 				border-radius: 5px;
-				user-select: none;				
+				user-select: none;	
+	                        outline: none;
 }
 .wr
 {
